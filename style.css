@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
+
+*{
+  font-family: 'Poppins', sans-serif;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    color: white;
+    transition: .2s ease-in-out;
+}
+body{
+    background: #000;
+}
+*::selection{
+  background: #a4af0ed2;
+
+  color:#333;
+}
+html{
+    font-size: 65%;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+    width: 1rem;
+  }
+  
+  html::-webkit-scrollbar-track {
+    background: #000;
+  }
+  
+  html::-webkit-scrollbar-thumb {
+    background: #a4af0ed2;
+    border-radius: 3rem;
+  }
+.header{
+ position:sticky;
+ top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 9%;
+    z-index: 1000;
+    background: #000;
+}
+  .header .logo {
+    font-weight: bolder;
+    font-size: 3rem;
+text-align: center;
+text-transform: uppercase;
+padding: 1rem 0rem;
+
+}
+  
+  .header .logo span {
+    color: #a4af0ed2;
+
+  }
+  
+  .header .navbar a {
+    display: inline-block;
+    padding: 1.5rem 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+  }
+  
+  .header .navbar a:hover {
+    background: #a4af0ed2;
+  }
+  section{
+    padding: 5em 9%;
+  }
+  .home{
+      background: url('https://source.unsplash.com/1600x900/?gym,workout,gym equipments') no-repeat;
+  min-height: 70vh;
+  background-size: cover ;
+  background-position: center ;
+  padding: 2rem 9%;
+align-items: center;
+display: flex;
+  }
+  .home .content{
+  width: 60rem;
+
+  }
+  .home  .content span {
+    font-size: 2rem;
+    color: #a4af0ed2;
+    display: block;
+  }
+  
+  .home  .content h3 {
+    font-size: 5rem;
+    color: #fff;
+    padding: 1rem 0;
+  }
+  .btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: #a4af0ed2;
+    border-radius: 1.3rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+  }
+  .btn:hover{
+      transform: scale(1.1);
+  }
+  .about{
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 5rem;
+      padding: 5rem 9%;
+
+  }
+  .about .image{
+ flex: 1 1 42rem;
+  }
+  .about .image img {
+    padding: 2rem;
+   width: 100%;
+  
+  }
+  .about .content{
+      flex: 1 1 40rem;
+  }
+.about .content .title {
+    font-size: 4rem;
+    margin-top: .5rem;
+  }
+  .about .content span {
+    font-size: 2rem;
+    color: #a4af0ed2;
+    border-bottom: .2rem solid #fff4;
+
+  }
+  .about .content p {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    line-height: 2;
+    opacity: .6;
+  }
+  .about .content .box-container {
+
+    display: flex;
+flex-wrap: wrap;
+    margin-top: 1rem;
+    gap: 2rem;
+  }
+  .about .content .box-container .box {
+flex: 1 1 20rem;
+  }
+  
+  .about .content .box-container .box h3 {
+    font-size: 2rem;
+  }
+  
+  .about .content .box-container .box h3 i {
+    padding-right: 1.5rem;
+    color: #a4af0ed2;
+  }
+  .features{
+    text-align: center;
+    padding: 0 9%;
+  }
+  .features h1 span{
+    color: #a4af0ed2;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    border: 0.1rem solid #aaa;
+
+  }
+  .features .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    gap: 0;
+  }
+  .features .box-container .box , .second{
+    background: #111
+  }
+  .second{
+   display: flex;
+   flex-direction: column-reverse;
+ }
+ .features .box-container .box .image {
+  height: 30rem;
+  width: 100%;
+  overflow: hidden;
+}
+.features .box-container .box .content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.features .box-container .box .content img {
+  height: 9rem;
+  margin-bottom: 1rem;
+ 
+}
+.features .box-container .box .image  img:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.features .box-container .box .content h3 {
+  font-size: 2rem;
+  color: #a4af0ed2;
+}
+
+.features .box-container .box .content p {
+  line-height: 2;
+  font-size: 1.5rem;
+  color: #aaa;
+  padding: 1rem 0;
+}
+.pricing{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  gap: 1.5rem;
+}
+.pricing .information span {
+  font-size: 2rem;
+  color: #a4af0ed2;
+  border-bottom: .2rem solid #fff4;
+
+}
+
+.pricing .information h3 {
+  font-size: 4rem;
+  padding-top: .5rem;
+  color: #fff;
+}
+
+.pricing .information p {
+  line-height: 2;
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  color: #aaa;
+}
+
+.pricing .information p i {
+  padding-right: 1rem;
+  color: #a4af0ed2;
+}
+
+.pricing .plan {
+  text-align: center;
+  padding: 2rem;
+}
+
+.pricing .plan.basic {
+  background: #111;
+}
+
+.pricing .plan h3 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  color: #fff;
+}
+
+.pricing .plan .price {
+  font-size: 5rem;
+  font-weight: bolder;
+  color: #a4af0ed2;
+}
+
+.pricing .plan .price span {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.pricing .plan .list {
+  padding: 1rem 0;
+}
+
+.pricing .plan .list p {
+  line-height: 2;
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  color: #aaa;
+}
+
+.pricing .plan .list p i {
+  padding-right: 1rem;
+  color: #a4af0ed2;
+}
+.trainers .box-container {
+  display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  gap: 1.5rem;
+}
+.heading span{
+  font-size: 3rem;
+    color: #a4af0ed2;
+    background: #000;
+    padding: 0.5rem 1.5rem;
+    border: 0.1rem solid #aaa;
+    border-radius: 0.5rem;
+   
+}
+.heading{
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.trainers .box-container .box {
+  height: 40rem;
+  overflow: hidden;
+  position: relative;
+}
+
+
+
+.trainers .box-container .box img {
+  height: 100%;
+  width: 100%;
+     object-fit: cover;
+}
+
+.trainers .box-container .box .content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  padding: 2rem;
+}
+
+.trainers .box-container .box .content span {
+  font-size: 1.5rem;
+  color: #a4af0ed2;
+}
+
+.trainers .box-container .box .content h3 {
+  font-size: 2rem;
+  color: #fff;
+  padding-top: .5rem;
+}
+
+.trainers .box-container .box .content .share {
+  padding-top: 2rem;
+  margin-top: 1.5rem;
+  border-top: 0.1rem solid #aaa;
+}
+
+.trainers .box-container .box .content .share a {
+  font-size: 2rem;
+  color: #fff;
+  margin-right: 1.5rem;
+}
+
+.trainers .box-container .box .content .share a:hover {
+  color: #a4af0ed2;
+}
+.footer .box-container {
+  display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.2rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box .links {
+  font-size: 1.5rem;
+  color: #aaa;
+  padding: 1rem 0;
+  display: block;
+}
+
+.footer .box-container .box .links:hover {
+  color: #a4af0ed2;
+}
+
+.footer .box-container .box p {
+  font-size: 1.5rem;
+  color: #aaa;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box p i {
+  padding-right: .5rem;
+  color: #a4af0ed2;
+}
+
+.footer .box-container .box .share {
+  padding: 1rem 0;
+}
+
+.footer .box-container .box .share a {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 1.7rem;
+  color: #fff;
+  background: #111;
+  border-radius: 50%;
+  margin-right: .5rem;
+  text-align: center;
+}
+
+.footer .box-container .box .share a:hover {
+  background: #a4af0ed2;
+}
+
+.footer .box-container .box form .email {
+  margin-bottom: 1rem;
+  width: 100%;
+  background: #111;
+  padding: 1.2rem;
+  font-size: 1.5rem;
+  color: #fff;
+  text-transform: none;
+}
+
+.credit {
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem;
+  color: #fff;
+  background: #111;
+  line-height: 1.5;
+}
+
+.credit span {
+  color: #a4af0ed2;
+}
+
+@media (max-width: 800px) {
+  .header {
+    display: block;
+    text-align: center;
+    margin: 2rem 0 ;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
